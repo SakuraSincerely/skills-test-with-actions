@@ -35,7 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
+      # Fix the indentation of the run key
       - name: Run markdown lint
-  run: |
-    npm install remark-cli remark-preset-lint-consistent
-    npx remark . --use remark-preset-lint-consistent --frail
+        run: |
+          npm install remark-cli remark-preset-lint-consistent
+          npx remark . --use remark-preset-lint-consistent --frail
